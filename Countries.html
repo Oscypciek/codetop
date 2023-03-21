@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kody krajów</title>
+</head>
+<body>
+	<h1>Kody krajów</h1>
+	<p>Kliknij na przycisk, aby dodac kod do topki:</p>
+
+    <style>
+    button {
+        background-color: #4CAF50; /* Kolor tła przycisku */
+        border: none; /* Brak obramowania przycisku */
+        color: white; /* Kolor tekstu */
+        padding: 15px 32px; /* Wypełnienie przycisku */
+        text-align: center; /* Wyśrodkowanie tekstu */
+        text-decoration: none; /* Brak podkreślenia tekstu */
+        display: inline-block; /* Ustawienie przycisku jako element blokowy */
+        font-size: 16px; /* Rozmiar czcionki */
+        margin: 4px 2px; /* Margines przycisku */
+        cursor: pointer; /* Kursor po najechaniu na przycisk */
+        border-radius: 10px; /* Zaokrąglenie rogów przycisku */
+      }
+      </style>
+	
+	<!-- Przyciski dla każdego kraju -->
+	<button onclick="showCode('Albania')">Albania</button>
+	<button onclick="showCode('Andora')">Andora</button>
+	<button onclick="showCode('Armenia')">Armenia</button>
+	<button onclick="showCode('Australia')">Australia</button>
+	<button onclick="showCode('Austria')">Austria</button>
+	<button onclick="showCode('Azerbaijan')">Azerbejdżan</button>
+	<button onclick="showCode('Belarus')">Białoruś</button>
+	<button onclick="showCode('Belgium')">Belgia</button>
+	<button onclick="showCode('BosniaHerz')">Bośnia i Hercegowina</button>
+	<button onclick="showCode('Bulgaria')">Bułgaria</button>
+	<button onclick="showCode('Croatia')">Chorwacja</button>
+	<button onclick="showCode('Cyprus')">Cypr</button>
+    <button onclick="showCode('Montenegro')">Czarnogóra</button>
+	<button onclick="showCode('Czechy')">Czechy</button>
+	<button onclick="showCode('Denmark')">Dania</button>
+	<button onclick="showCode('Estonia')">Estonia</button>
+	<button onclick="showCode('Finland')">Finlandia</button>
+	<button onclick="showCode('France')">Francja</button>
+	<button onclick="showCode('Georgia')">Gruzja</button>
+	<button onclick="showCode('Greece')">Grecja</button>
+    <button onclick="showCode('Spain')">Hiszpania</button>
+    <button onclick="showCode('Netherlands')">Holandia</button>
+	<button onclick="showCode('Iceland')">Islandia</button>
+    <button onclick="showCode('Ireland')">Irlandia</button>
+    <button onclick="showCode('Lithuania')">Litwa</button>
+    <button onclick="showCode('Yugoslavia')">Jugosławia</button>
+    <button onclick="showCode('Luxembourg')">Luksemburg</button>
+    <button onclick="showCode('Latvia')">Łotwa</button>
+    <button onclick="showCode('North Macedonia')">Macedonia Północna</button>
+    <button onclick="showCode('Malta')">Malta</button>
+    <button onclick="showCode('Moldova')">Mołdawia</button>
+    <button onclick="showCode('Morocco')">Maroko</button>
+    <button onclick="showCode('Monaco')">Monako</button>
+    <button onclick="showCode('Germany')">Niemcy</button>
+    <button onclick="showCode('Norway')">Norwegia</button>
+    <button onclick="showCode('Poland')">Polska</button>
+    <button onclick="showCode('Portugal')">Portugalia</button>
+    <button onclick="showCode('Romania')">Rumunia</button>
+    <button onclick="showCode('Russia')">Rosja</button>
+    <button onclick="showCode('San Marino')">San Marino</button>
+    <button onclick="showCode('Serbia')">Serbia</button>
+    <button onclick="showCode('SerbiaMont')">Serbia i Czarnogóra</button>
+    <button onclick="showCode('Slovakia')">Słowacja</button>
+    <button onclick="showCode('Slovenia')">Słowenia</button>
+    <button onclick="showCode('Sweden')">Szwecja</button>
+    <button onclick="showCode('Switzerland')">Szwajcaria</button>
+    <button onclick="showCode('Turkey')">Turcja</button>
+    <button onclick="showCode('Ukraine')">Ukraina</button>
+    <button onclick="showCode('UK')">Wielka Brytania</button>
+    <button onclick="showCode('Hungary')">Węgry</button>
+    <button onclick="showCode('Italy')">Włochy</button>
+
+    <script>
+    var code = "";
+        function showCode(country) {
+
+  switch(country) {
+    case "Albania":
+      code += " AL, ";
+      break;
+    case "Andora":
+      code += " AD, ";
+      break;
+    case "Armenia":
+      code += " AM, ";
+      break;
+    case "Australia":
+      code += " AU, ";
+      break;
+    case "Austria":
+      code += " AT, ";
+      break;
+    case "Azerbaijan":
+      code += " AZ, ";
+      break;
+    case "Belarus":
+      code += " BY, ";
+      break;
+    case "Belgium":
+      code += " BE, ";
+      break;
+    case "BosniaHerz":
+      code += " BA, ";
+      break;
+    case "Bulgaria":
+      code += " BG, ";
+      break;
+    case "Croatia":
+      code += " HR, ";
+      break;
+    case "Cyprus":
+      code += " CY, ";
+      break;
+    case "Czechy":
+      code += " CZ, ";
+      break;
+    case "Denmark":
+      code += " DK, ";
+      break;
+    case "Estonia":
+      code += " EE, ";
+      break;
+    case "Finland":
+      code += " FI, ";
+      break;
+    case "France":
+      code += " FR, ";
+      break;
+    case "Georgia":
+      code += " GE, ";
+      break;
+    case "Germany":
+      code += " DE, ";
+      break;
+    case "Greece":
+      code += " GR, ";
+      break;
+    case "Hungary":
+      code += " HU, ";
+      break;
+    case "Iceland":
+      code += " IS, ";
+      break;
+    case "Ireland":
+      code += " IE, ";
+      break;
+    case "Italy":
+      code += " IT, ";
+      break;
+    case "Latvia":
+      code += " LV, ";
+      break;
+    case "Lithuania":
+      code += " LT, ";
+      break;
+    case "Luxembourg":
+      code += " LU, ";
+      break;
+    case "Malta":
+      code += " MT, ";
+      break;
+    case "Moldova":
+      code += " MD, ";
+      break;
+    case "Monaco":
+      code += " MC, ";
+      break;
+    case "Montenegro":
+      code += " ME, "; 
+      break;
+    case "Morocco":
+      code += " MA, ";
+      break;
+    case "Netherlands":
+      code += " NL, ";
+      break;
+    case "North Macedonia":
+      code += " MK, ";
+      break;
+    case "Norway":
+      code += " NO, ";
+      break;
+    case "Poland":
+      code += " PL, ";
+      break;
+    case "Portugal":
+      code += " PT, ";
+      break;
+    case "Romania":
+      code += " RO, ";
+      break;
+    case "Russia":
+      code += " RU, ";
+      break;
+    case "San Marino":
+      code += " SM, ";
+      break;
+    case "Serbia":
+      code += " RS, ";
+      break;
+    case "SerbiaMont":
+      code += " CS, ";
+      break;
+    case "Slovakia":
+      code += " SK, ";
+      break;
+    case "Slovenia":
+      code += " SI, ";
+      break;
+    case "Spain":
+      code += " ES, ";
+      break;
+    case "Sweden":
+        code += " SE, ";
+    break;
+    case "Serbia":
+      code += " RS, ";
+      break;
+    case "Switzerland":
+      code += " CH, ";
+      break;
+    case "Turkey":
+      code += " TR, ";
+      break;
+    case "Ukraine":
+      code += " UA, ";
+      break;
+    case "UK":
+        code += " GB, ";
+        break;
+     case "Yugoslavia":
+        code += " YU, ";
+        break;
+  }
+  document.getElementById("wynik").innerHTML = code;
+}
+    </script>
+
+    <p id="wynik"></p>
+</body>
+</html>
